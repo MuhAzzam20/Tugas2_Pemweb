@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- Mendeklarasikan jenis dokumen dan versi HTML -->
+<html lang="en"> <!-- Menentukan elemen root dari dokumen HTML dengan atribut bahasa diatur ke bahasa Inggris -->
+<head> <!-- Bagian kepala yang berisi informasi meta tentang dokumen HTML -->
+    <meta charset="UTF-8"> <!-- Menentukan pengkodean karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Menentukan tampilan responsif pada perangkat web/mobile -->
+    <title>Form Registrasi</title> <!-- Judul dokumen HTML -->
+</head>
+<body> 
+    <h2>Form Registrasi</h2> <!-- Heading 2 -->
+    <!-- Form Biodata -->
+    <form action=""> 
+        <fieldset> <!-- Kotak untuk mengelompokkan elemen formulir -->
+            <legend>Biodata</legend> <!-- Judul legenda -->
+            <table> <!-- Tabel untuk menyusun elemen formulir -->
+                <tr>
+                    <td><label for="nama">Nama Mahasiswa:</label></td> <!-- Label untuk input nama -->
+                    <td><input type="text" id="nama" name="nama"></td> <!-- Input teks untuk nama -->
+                </tr>
+                <tr>
+                    <td><label for="nim">Nim Mahasiswa:</label></td> <!-- Label untuk input NIM -->
+                    <td><input type="text" id="nim" name="nim"></td> <!-- Input teks untuk NIM -->
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat Mahasiswa:</label></td> <!-- Label untuk input alamat -->
+                    <td><textarea id="alamat" name="alamat"></textarea></td> <!-- Area teks untuk alamat -->
+                </tr>
+                <tr>
+                    <td><label for="tanggallahir">Tanggal Lahir:</label></td> <!-- Label untuk input tanggal lahir -->
+                    <td><input type="date" id="tanggallahir" name="tanggallahir"></td> <!-- Input tanggal untuk tanggal lahir -->
+                </tr>
+                <tr>
+                    <td><label for="jk">Jenis Kelamin:</label></td> <!-- Label untuk input jenis kelamin -->
+                    <td>
+                        <label for="pria">
+                            <input type="radio" id="pria" name="jk" value="pria" checked>
+                            Pria
+                        </label>
+                        <label for="wanita">
+                            <input type="radio" id="wanita" name="jk" value="wanita">
+                            Wanita
+                        </label>
+                    </td> <!-- Input radio untuk pilihan jenis kelamin -->
+                </tr>
+                <tr>
+                    <td><label for="foto">Upload Foto:</label></td> <!-- Label untuk input unggah foto -->
+                    <td><input type="file" id="foto" name="foto"></td> <!-- Input berkas untuk unggah foto -->
+                </tr>
+                <tr>
+                    <td><label for="website">URL Website:</label></td> <!-- Label untuk input URL website -->
+                    <td><input type="url" id="website" name="website"></td> <!-- Input URL untuk website -->
+                </tr>
+                <tr>
+                    <td><label for="perguruan_tinggi">Perguruan Tinggi:</label></td> <!-- Label untuk input perguruan tinggi -->
+                    <td><input type="text" id="perguruan_tinggi" name="perguruan_tinggi"></td> <!-- Input teks untuk perguruan tinggi -->
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Form Info Akun -->
+        <fieldset> <!-- Kotak untuk mengelompokkan elemen formulir -->
+            <legend>Info Akun</legend> <!-- Judul legenda -->
+            <table> <!-- Tabel untuk menyusun elemen formulir -->
+                <tr>
+                    <td><label for="email">Email:</label></td> <!-- Label untuk input email -->
+                    <td><input type="email" id="email" name="email"></td> <!-- Input email -->
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td> <!-- Label untuk input username -->
+                    <td><input type="text" id="username" name="username"></td> <!-- Input teks untuk username -->
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td> <!-- Label untuk input password -->
+                    <td><input type="password" id="password" name="password"></td> <!-- Input sandi untuk password -->
+                </tr>
+                <tr>
+                    <td><label for="password_confirm">Ulangi Password:</label></td> <!-- Label untuk input konfirmasi password -->
+                    <td><input type="password" id="password_confirm" name="password_confirm"></td> <!-- Input sandi untuk konfirmasi password -->
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <!-- Form Kemampuan Dasar -->
+    <form action=""> <!-- Form dengan aksi kosong (belum ditentukan) -->
+        <fieldset> <!-- Kotak untuk mengelompokkan elemen formulir -->
+            <legend>Kemampuan Dasar</legend> <!-- Judul legenda -->
+            <table> <!-- Tabel untuk menyusun elemen formulir -->
+                <tr>
+                    <td><label for="html">HTML:</label></td> <!-- Label untuk input HTML -->
+                    <td><input type="checkbox" id="html" name="html"></td> <!-- Kotak centang untuk HTML -->
+                </tr>
+                <tr>
+                    <td><label for="css">CSS:</label></td> <!-- Label untuk input CSS -->
+                    <td><input type="checkbox" id="css" name="css"></td> <!-- Kotak centang untuk CSS -->
+                </tr>
+                <tr>
+                    <td><label for="javascript">Javascript:</label></td> <!-- Label untuk input Javascript -->
+                    <td><input type="checkbox" id="javascript" name="javascript"></td> <!-- Kotak centang untuk Javascript -->
+                </tr>
+                <tr>
+                    <td><label for="php">PHP:</label></td> <!-- Label untuk input PHP -->
+                    <td><input type="checkbox" id="php" name="php"></td> <!-- Kotak centang untuk PHP -->
+                </tr>
+                <tr>
+                    <td><label for="mysql">MySQL:</label></td> <!-- Label untuk input MySQL -->
+                    <td><input type="checkbox" id="mysql" name="mysql"></td> <!-- Kotak centang untuk MySQL -->
+                </tr>
+                <tr>
+                    <td><label for="laravel">Laravel:</label></td> <!-- Label untuk input Laravel -->
+                    <td><input type="checkbox" id="laravel" name="laravel"></td> <!-- Kotak centang untuk Laravel -->
+                </tr>
+                <tr>
+                    <td><label for="react_native">React Native:</label></td> <!-- Label untuk input React Native -->
+                    <td><input type="checkbox" id="react_native" name="react_native"></td> <!-- Kotak centang untuk React Native -->
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <button type="reset">Reset</button> <!-- Tombol reset untuk menghapus input formulir -->
+    <button type="submit">Simpan</button> <!-- Tombol submit untuk mengirimkan formulir -->
+</body>
+</html>
